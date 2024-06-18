@@ -68,17 +68,17 @@ const {snippet : {title,channelId,channelTitle,thumbnails
   return (
     
     <>
-    <div className='grid grid-cols-5 gap-4 h-[84vh]  '>
-    <div className=' col-span-3   '>
-      <div className='   '>
+    <div className='playing flex justify-between gap-4 md:h-[84vh]   '>
+    <div className=' mr-6'>
+      <div className=' video '>
       <ReactPlayer url={`https://www.youtube.com/watch?v=${id}`} 
       controls playing
-      className="react-player " />
+      className="react-player  " />
       </div>
       <div className=''>
-      <h2 className='font-semibold mt-4'>{title}</h2>
+      <h2 className='title font-semibold mt-4'>{title}</h2>
       </div>
-      <div className='flex justify-between '>
+      <div className='title flex justify-between '>
         <div className='flex'>
         <Link to={`/channel/${channelId}`}>
           <div className='flex p-2'>
@@ -103,7 +103,9 @@ const {snippet : {title,channelId,channelTitle,thumbnails
         
     </div>
     
-    <div className='  m-5 mt-0 col-span-2 overflow-scroll'>
+    <div className='related w-[35%]  max-md:bg-yellow-50 z-10 m-5 mt-0  overflow-scroll'>
+
+    {/* Related Videos */}
     <VideoesCards videoes={relatedVideoes}  display="hidden"/>
     </div>
     </div>

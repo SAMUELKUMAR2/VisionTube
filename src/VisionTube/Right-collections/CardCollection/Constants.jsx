@@ -1,6 +1,6 @@
  const categories =[
     {name:"Universal"},
-    {name:"New Jobs"},
+    {name:"Jobs"},
     {name:"news"},
     {name:"Health"},
     {name:"coding"},

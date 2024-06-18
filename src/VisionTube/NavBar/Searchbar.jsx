@@ -25,7 +25,7 @@ const Searchbar = () => {
     }
     return (
         <>
-            <div className=" w-[95%] sticky pb-1 bg-purple-100 overflow-hidden flex ">
+            <div className="title w-[95%] sticky pb-1 bg-purple-100 overflow-hidden flex ">
                 {/* search input box, search button */}
                 <div className='flex w-full'>
                     <div>
@@ -34,7 +34,7 @@ const Searchbar = () => {
                                 <input value={SearchTerm}
 
                                     onChange={(e) => { SetSearchTerm(e.target.value) }}
-                                    className='rounded-l-full w-[40vw] pr-3 pl-3 border-2 border-opacity-30 border-gray-950 outline-neutral-950' placeholder='search'>
+                                    className='search rounded-l-full w-[40vw] pr-3 pl-3 border-2 border-opacity-30 border-gray-950 outline-neutral-950' placeholder='search'>
 
                                 </input>
                                 <div className='flex border-r-2 border-t-2 border-b-2 border-opacity-30 border-black rounded-r-full bg-white'>

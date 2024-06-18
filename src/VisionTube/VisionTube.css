@@ -5,3 +5,25 @@
 ::-webkit-scrollbar {
   display: none;
 }
+
+@media only screen and (max-width: 720px) {
+ 
+ .playing{
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  
+ 
+ }
+ .related{
+  width: 250%;
+
+ }
+ .title{
+  width: 200%;
+ }
+ 
+ 
+
+}

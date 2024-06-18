@@ -25,7 +25,7 @@ const VideoesCards = ({videoes,SelectCategory,SetselectedCategory,display}) => {
   <div className=' w-full h-full '>
 
     {/* Tags */}
-  <div className={`mt-5 ${display}`}>
+  <div className={`flex mt-5 p-2  w-full  overflow-x-scroll`}>
                 {/* <TagsCollection  /> */}
                 {categories.map((c)=>(
                   <button
